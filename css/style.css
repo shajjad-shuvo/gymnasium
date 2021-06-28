@@ -1,6 +1,10 @@
 /*
     1. common css
-    2. navbar css
+    2. heading css
+    3. navbar css
+    4. banner css
+    5. about css
+    6. gallery css
 
 */
 
@@ -45,7 +49,34 @@ img{
 /* ========================
     common ends here 
 ======================== */
+.heading h3{
+    font-family: var(--hf);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--cl2);
+    text-transform: uppercase;
+}
 
+.heading img{
+    margin-top: -15px;
+}
+
+
+/* ========================
+    heading ends here 
+======================== */
+.item-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overred);
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all linear 0.4s;
+}
 
 
 /* ========================
@@ -320,7 +351,202 @@ img{
     outline: none;
 }
 
+/* ========================
+    banner css ends 
+======================== */
+#about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#about .about-video{
+    position: relative;
+}
+
+#about .about-video .about-overlay{
+    width: 100%;
+    height: 100%;
+    background: var(--over6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#about .about-video .about-overlay i{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--cl1);
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+    color: var(--cl2);
+}
+
+#about .about-video .about-overlay .about-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 
+#about .about-details p{
+    font-family: var(--pf);
+    font-size: 14.5px;
+    font-weight: 400;
+    color: var(--clp);
+    line-height: 24px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+#about .about-details p:last-of-type{
+    margin-top: -10px;
+}
+
+/* ========================
+    about css ends 
+======================== */
+#gallery .gallery-bg{
+    padding-top: 30px;
+    background: url(../images/gallery-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+#gallery .gallery-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#gallery .gallery-bg .gallery-item{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#gallery .gallery-bg .gallery-item:hover .item-overlay{
+    opacity: 1;
+}
+
+#gallery .gallery-bg .gallery-item .item-overlay .gl-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#gallery .gallery-bg .gallery-item .item-overlay .gl-icon i{
+    color: #fff;
+    font-size: 24px;
+}
+
+/* ========================
+    gallery css ends 
+======================== */
+#team{
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+#team .team-content .team-member{
+    margin-right: 30px;
+    padding-top: 70px;
+    transition: all linear 0.4s;
+}
+
+#team .team-content .team-member:hover{
+    transform: translateY(-40px);
+}
+
+#team .team-content .team-member .card{
+    border-color: transparent !important;
+    border-radius: 0 !important;
+    transition: all linear 0.4s;
+}
+
+#team .team-content .team-member:hover .card{
+    border-color: var(--bg2) !important;
+}
+
+#team .team-content .team-member .card .card-img .card-img-top{
+    border-radius: 0 !important;
+}
+#team .team-content .team-member .card-img{
+    position: relative;
+}
+
+
+#team .team-content .team-member:hover .card-img .item-overlay{
+    opacity: 1
+}
+
+#team .team-content .team-member .card-img .item-overlay ul{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+#team .team-content .team-member .card-img .item-overlay ul li{
+    margin-bottom: 10px;
+}
+
+
+
+#team .team-content .team-member .card-img .item-overlay ul li:last-child{
+    margin-bottom: 0;
+}
+
+#team .team-content .team-member .card-img .item-overlay i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    transition: all linear 0.4s;
+}
+#team .team-content .team-member .card-img .item-overlay ul li:hover i{
+    background: #fff;
+    color: #1da0f2;
+}
+
+#team .team-content .team-member .card-title{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--cl2);
+}
+
+#team .team-content .team-member h6{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--clu);
+}
+
+#team .team-content .team-member .card-text{
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--clp);
+    visibility: hidden;
+    transition: all linear 0.5s;
+    opacity: 0
+}
+
+#team .team-content .team-member:hover .card-text{
+    visibility: visible;
+    opacity: 1;
+}
 
 
