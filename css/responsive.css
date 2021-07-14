@@ -1,0 +1,122 @@
+/* extra small device */
+@media (max-width:575px){
+    .navbar .navbar-brand{
+        position: static;
+        padding: 0 16px;
+        transform: skewX(0);
+    }
+    .navbar .navbar-brand img {
+	    transform: skewX(0);
+    }
+    .navbar .navbar-toggler{
+        border-color: #fff !important;
+    }
+    .navbar .navbar-toggler span{
+        color: #fff;
+    }
+    
+    .navbar .navbar-nav{
+        background: rgba(255, 255, 255, 0.7);
+    }
+    
+    .navbar-light .navbar-nav .nav-link{
+        text-align: center;
+        color: #353535;
+    }
+    
+    .slider-item {
+	    padding-top: 180px;
+	    padding-bottom: 85px;
+    }
+    
+    #banner .bg1 .banner-text::before,
+    #banner .bg1 .banner-text::after,
+    #banner .bg1 .banner-text h2::before,
+    #banner .bg1 .banner-text h2::after,
+    #banner .bg1 .banner-text h1::before,
+    #banner .bg1 .banner-text h1::after
+    {
+        display: none;
+    }
+    
+    
+    #about {
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+    }
+    
+    #about .about-video{
+        margin-top: 25px;
+    }
+    
+    
+    #routine .routine-head .nav-tabs .nav-item .nav-link {
+	    width: 265px;
+	    margin-bottom: 10px;
+        margin-right: 10px;
+    }
+   
+    #routine .tab-content ul li{
+        padding: 70px;
+    }   
+    
+    #routine .tab-content ul li:nth-child(5n){
+        margin-right: 5px !important;
+    }
+    
+    #brand .brand-item {
+	    margin-right: 31px;
+    }
+    
+    #brand .brand-item img {
+	    width: 100%;
+    }
+    
+    
+    
+}
+/* extra small device */
+
+/*  small device */
+@media (min-width:576px) and (max-width:767px){
+    .navbar .navbar-brand{
+        position: static;
+        padding: 0 16px;
+        transform: skewX(0);
+    }
+    .navbar .navbar-brand img {
+	    transform: skewX(0);
+    }
+    .navbar .navbar-toggler{
+        border-color: #fff !important;
+    }
+    .navbar .navbar-toggler span{
+        color: #fff;
+    }
+    
+    .navbar .navbar-nav{
+        background: rgba(255, 255, 255, 0.7);
+    }
+    
+    .navbar-light .navbar-nav .nav-link{
+        text-align: center;
+        color: #353535;
+    }
+    
+    .slider-item {
+	    padding-top: 180px;
+	    padding-bottom: 85px;
+    }
+    
+    #banner .bg1 .banner-text::before,
+    #banner .bg1 .banner-text::after,
+    #banner .bg1 .banner-text h2::before,
+    #banner .bg1 .banner-text h2::after,
+    #banner .bg1 .banner-text h1::before,
+    #banner .bg1 .banner-text h1::after
+    {
+        display: none;
+    }
+    
+}
+/*  small device */
