@@ -549,4 +549,522 @@ img{
     opacity: 1;
 }
 
+/* ========================
+    team css ends 
+======================== */
+#feedback{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: url(../images/test-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+#feedback::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#feedback .feedback-item{
+    margin-right: 30px;
+}
 
+#feedback .feedback-item .feedback-title h5{
+    font-family: var(--hf);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#feedback .feedback-item .feedback-title h6{
+    font-family: var(--hf);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#feedback .feedback-item .feedback-title ul{
+    padding: 0;
+}
+#feedback .feedback-item .feedback-title ul li{
+    color: var(--cl1);
+    display: inline-block;
+}
+
+#feedback .feedback-item .feedback-text p{
+    font-family: var(--pf);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+}
+
+
+#feedback .slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    display: flex;
+    margin-bottom: 0;
+}
+
+#feedback .slick-dots li{
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#feedback .slick-dots li:last-child{
+    margin-right: 0;
+}
+
+#feedback .slick-dots li.slick-active{
+    background: var(--cl1);
+    border-color: var(--cl1);
+    transform: scale(1.2);
+}
+
+#feedback .slick-dots li button{
+    font-size: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* ========================
+    fedback css ends 
+======================== */
+#membership{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#membership .pricing .price-head h3{
+    line-height: 55px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--hf);
+    color: var(--cl2);
+    text-transform: uppercase;
+    background: var(--bg2);
+    margin-bottom: 0 !important;
+    transition: all linear 0.4s;
+}
+
+#membership .pricing:hover .price-head h3{
+    background: var(--cl1);
+    color: #fff;
+}
+
+#membership .pricing .monthly-price{
+    background: url(../images/price-bg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+#membership .pricing .monthly-price::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#membership .pricing .monthly-price h4{
+    font-family: var(--hf);
+    font-weight: 500;
+    font-size: 29px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 0 !important;
+    line-height: 120px !important;
+}
+
+#membership .pricing .monthly-price h4 span{
+    font-size: 50px;
+}
+
+#membership .pricing .member-features{
+    background: var(--bg1);
+}
+
+#membership .pricing .member-features ul{
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#membership .pricing .member-features ul li{
+    color: var(--clu);
+    text-transform: capitalize;
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#membership .pricing .price-footer a{
+    display: block;
+    line-height: 34px;
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: var(--bg2);
+    color: var(--cl2);
+    transition: all linear .4s;
+}
+
+#membership .pricing:hover .price-footer a{
+    background: var(--cl1);
+    color: #fff;
+}
+
+/* ========================
+    membership css ends 
+======================== */
+#funfact{
+    background: url(../images/gallery-bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+
+#funfact::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#funfact .fun-item h4{
+    margin: 0;
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 40px;
+}
+#funfact .fun-item p{
+    margin: 0;
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+/* ========================
+    funfact css ends 
+======================== */
+#routine{
+    padding-top: 75px;
+    padding-bottom: 70px;
+}
+
+#routine .routine-head{
+    padding-top: 20px;
+}
+
+#routine .routine-head  .nav-tabs{
+    border-bottom: none !important;
+}
+
+#routine .routine-head .nav-tabs .nav-item .nav-link{
+    width: 185px;
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 14px;
+    color: #353;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    padding: 0;
+    background: var(--bg1);
+    line-height: 51px;
+}
+
+#routine .routine-head .nav-tabs .nav-item .nav-link.active{
+    background: var(--cl1);
+    color: #fff;
+}
+
+#routine .tab-content ul{
+    padding: 0;
+}
+#routine .tab-content ul li{
+    background: var(--bg1);
+    text-align: center;
+    padding: 50px 46px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: all linear 0.4s;
+}
+
+#routine .tab-content ul li p{
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cl2);
+    text-transform: capitalize;
+    margin: 0 !important;
+}
+
+#routine .tab-content ul li p:last-of-type{
+    font-size: 14px;
+    margin-top: -10px !important;
+}
+
+#routine .tab-content ul li i{
+    font-size: 42px;
+}
+
+#routine .tab-content ul li:nth-child(5n){
+    margin-right: 0 !important;
+}
+
+#routine .tab-content ul li.active{
+    background: var(--cl1);
+    color: #fff;
+}
+
+#routine .tab-content ul li.active p{
+    color: #fff;
+}
+
+#routine .tab-content ul li:hover{
+    transform: scale(1.03);
+}
+
+/* ========================
+    routine css ends 
+======================== */
+#brand{
+    padding-bottom: 80px;
+} 
+
+#brand .brand-item{
+/*    margin-right: 30px;*/
+} 
+
+#brand .brand-item img{
+/*    width: 100%;*/
+}
+#brand .prevBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+    cursor: pointer;
+}
+#brand .nextBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+    cursor: pointer;
+}
+
+
+#brand .slick-center.brand-item{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================
+    brand css ends 
+======================== */
+
+#footer{
+    background: url(../images/footerbg.png);
+    position: relative;
+}
+
+#footer::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+#footer::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: 54px;
+    left: 0;
+}
+
+#footer .footer-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    padding-top: 30px;
+}
+
+#footer .footer-overlay .footer-logo{
+    padding-bottom: 30px;
+}
+
+#footer .footer-overlay .footer-item{
+    padding-bottom: 30px;
+}
+
+#footer .footer-overlay .footer-item h4{
+    font-family: var(--hf);
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#footer .footer-overlay .footer-item ul li{
+    font-family: var(--pf);
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#footer .footer-overlay .footer-item ul li .day{
+    text-transform: capitalize;
+    width: 70px;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+
+#footer .footer-overlay .footer-item .weeks li{
+    margin-bottom: 7px;
+}
+
+#footer .footer-overlay .footer-item .weeks li:last-child{
+    margin-bottom: 0;
+}
+
+#footer .footer-overlay .footer-item .twit li{
+    position: relative;
+    padding-left: 28px;
+    text-transform: none;
+    margin-bottom: 25px;
+}
+
+#footer .footer-overlay .footer-item .twit li:last-child{
+    margin-bottom: 0;
+}
+
+#footer .footer-overlay .footer-item .twit .footer-icon{
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+#footer .footer-overlay .footer-item .twit .footer-icon i{
+    color: #1da1f2;
+    font-size: 20px;
+}
+#footer .footer-overlay .footer-item .twit a{
+    color: #fff;
+}
+
+#footer .footer-overlay .footer-item .twit li .date{
+    display: block;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#footer .footer-overlay .footer-item .flickr li{
+    float: left;
+    margin-right: 10px;
+    width: 57px;
+    margin-bottom: 10px;
+}
+
+#footer .footer-overlay .footer-item .flickr li img{
+    width: 100%;
+}
+
+#footer .footer-overlay .footer-item .flickr li:nth-child(4n){
+    margin-right: 0;
+}
+
+#footer .footer-overlay .footer-item .contact li{
+    text-transform: none;
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 20px;
+}
+
+#footer .footer-overlay .footer-item .contact li:last-child{
+    margin-bottom: 0;
+}
+
+#footer .footer-overlay .footer-item .contact li i{
+    color: var(--cl1);
+}
+#footer .footer-overlay .footer-item .contact li a{
+    color: #fff;
+}
+
+#footer .footer-overlay .footer-item h4:last-of-type{
+    margin-top: -5px;
+}
+
+#footer .footer-overlay .footer-item .contact .footer-icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#footer .footer-overlay .footer-item  .footer-social i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 5px;
+    transition: all linear .4s;
+}
+
+#footer .footer-overlay .footer-item  .footer-social i:hover{
+    background: var(--cl1);
+    border-color: var(--cl1);
+}
+
+#footer .footer-overlay .footer-copy p{
+    font-family: var(--pf);
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 54px;
+    margin: 0;
+}
+
+
+#footer .footer-overlay .footer-copy p a{
+    text-transform: uppercase;
+    color: var(--cl1);
+}
